@@ -65,11 +65,20 @@
  *     я ч с м и   т ь б ю .     |
  */
 
+        // default_layer {
+        //     bindings = <
+        //         &kp GRAVE &kp Q   &kp W        &kp E       &kp R       &kp T         &kp Y            &kp U          &kp I            &kp O           &kp P     &kp LBKT
+        //         &kp RBKT  &kp A   &kp S        &kp D       &kp F       &kp G         &kp H            &tdj           &kp K            &kp L           &kp SEMI  &kp QUOT
+        //                   &kp Z   &hm LCTRL X  &hm LGUI C  &hm LALT V  &kp B         &kp N            &hm LALT M     &hm RGUI COMMA   &hm RCTRL DOT   &kp FSLH
+        //                                     &lt NUM_L TAB  &ht LSHFT SPACE           &ht RSHFT ENTER  &lt SYM_L BKSP
+        //         >;
+        // };
+
         default_layer {
             bindings = <
-                &kp GRAVE &kp Q   &kp W        &kp E       &kp R       &kp T         &kp Y            &kp U          &kp I            &kp O           &kp P     &kp LBKT
-                &kp RBKT  &kp A   &kp S        &kp D       &kp F       &kp G         &kp H            &tdj           &kp K            &kp L           &kp SEMI  &kp QUOT
-                          &kp Z   &hm LCTRL X  &hm LGUI C  &hm LALT V  &kp B         &kp N            &hm LALT M     &hm RGUI COMMA   &hm RCTRL DOT   &kp FSLH
+                &bt BT_CLR       &bt BT_SEL 0  &bt BT_SEL 1       &bt BT_SEL 2      &kp R       &kp T         &kp A            &kp U          &kp I            &kp O           &kp P     &kp LBKT
+                &bt BT_CLR_ALL   &bt BT_SEL 3  &bt BT_SEL 4       &kp D       &kp F       &kp G         &kp H            &tdj           &kp K            &kp L           &kp SEMI  &kp QUOT
+                                 &kp B         &hm LCTRL X  &hm LGUI C  &hm LALT V  &kp B         &kp N            &hm LALT M     &hm RGUI COMMA   &hm RCTRL DOT   &kp FSLH
                                             &lt NUM_L TAB  &ht LSHFT SPACE           &ht RSHFT ENTER  &lt SYM_L BKSP
                 >;
         };
