@@ -1,0 +1,23 @@
+#include "zmk-helpers/unicode-chars/portuguese.dtsi"
+
+/*                KEY POSITIONS
+
+  ╭───────────────────╮ ╭───────────────────╮
+  │ 0   1  2  3  4  5 │ │ 6   7  8  9 10 11 │
+  │ 12 13 14 15 16 17 │ │ 18 19 20 21 22 23 │
+  │    24 25 26 27 28 │ │ 29 30 31 32 33    │
+  ╰────────────╮34 35 │ │ 36 37 ╭───────────╯
+               ╰──────╯ ╰───────╯                 */
+
+
+
+#define COMBO_TERM_FAST 15
+#define COMBO_TERM_SLOW 30
+
+// ZMK_COMBO(lpar, &kp LPAR, 19 20, DEF, COMBO_TERM_FAST, COMBO_TERM_FAST)
+// ZMK_COMBO(rpar, &kp RPAR, 20 21, DEF, COMBO_TERM_FAST, COMBO_TERM_FAST)
+ZMK_COMBO(lbra, &kp LBRC, 7   8, DEF, COMBO_TERM_FAST, COMBO_TERM_FAST)
+ZMK_COMBO(rbra, &kp RBRC, 8   9, DEF, COMBO_TERM_FAST, COMBO_TERM_FAST)
+ZMK_COMBO(lbkt, &kp LBKT, 30 31, DEF, COMBO_TERM_FAST, COMBO_TERM_FAST)
+ZMK_COMBO(rbkt, &kp RBKT, 31 32, DEF, COMBO_TERM_FAST, COMBO_TERM_FAST)
+// ZMK_COMBO(cedl, &pt_c_cedilla, 25 26, DEF, COMBO_TERM_FAST, COMBO_TERM_FAST)
