@@ -10,7 +10,7 @@ manifest:
       revision: main
       import: app/west.yml
     - name: zmk-helpers
-      remove: urob
+      remote: urob
       revision: main
   self:
     path: config
