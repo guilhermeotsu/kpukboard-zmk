@@ -3,6 +3,29 @@ Firmware for my keyboard
 
 https://github.com/kriku/kpukboard-pcb
 
+## Build instructions local
+```basjh
+west build -d build/right -b seeeduino_xiao_ble -- -DZMK_CONFIG=/home/otsu/github/kpukboard-zmk/config -DZMK_EXTRA_MODULES="/home/otsu/github/kpukboard-zmk/zmk-helpers;/home/otsu/github/kpukboard-zmk/zmk-tri-state;/home/otsu/github/kpukboard-zmk/zmk-rgbled-widget;" -DSHIELD="kpukboard_right"
+```
+
+## Flash your board
+```bash
+-- identify your board
+-- enter into debug mode on xiao
+-- usually /dev/sdb
+lsblk
+
+-- mount
+sudo mount /dev/sdb/ ~/some-mnt
+
+-- copy firmware
+sudo cp ~/zmk/app/build/left/zephyr/zmk.uf2
+
+-- umount
+sudo umount ~/some-mnt
+-- 
+```
+
 ### DEFAULT
 
 ```
